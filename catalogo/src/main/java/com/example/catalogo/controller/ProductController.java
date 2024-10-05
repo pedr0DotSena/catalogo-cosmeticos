@@ -3,6 +3,7 @@ import com.example.catalogo.product.Product;
 import com.example.catalogo.product.ProductRepository;
 import com.example.catalogo.product.ProductRequestDTO;
 import com.example.catalogo.product.ProductResponseDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
 
 public class ProductController {
     // CRIANDO INSTANCIA DE REPOSITORY:
+    @Autowired
     private ProductRepository repository;
 
     // MÉTODO PRA POST:
